@@ -21,7 +21,9 @@ Naming issue, all names are Chinese, because this website targets towards Chines
 
 The following content contains inside jokes that are specific to China. There is no malicious intent, please do not misunderstand.
 
- ### 写码体验
+![](https://s3.bmp.ovh/imgs/2023/04/01/9d37b6db6d478961.jpg)
+
+### 写码体验
 
 雪豹闭嘴，上面怎么一直在写英语？你不爱国吗？
 
