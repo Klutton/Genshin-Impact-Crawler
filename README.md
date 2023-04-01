@@ -33,7 +33,7 @@ The following content contains inside jokes that are specific to China. There is
 
 因此我拿出我看家本领if else，给脚本洗了一遍数据，把关键内容从字符串中摘出来！期间还有特别蠢比的问题就是很莫名其妙的代码混淆（你这个算是混淆吗？）
 
-```
+```javascript
 cv:[
     {
         name:g,
@@ -58,7 +58,7 @@ cv:[
 
 因此我还得在我的垃圾匹配代码里加上特殊情况的处理😄
 
-```
+```python
 func_list = content[content.rfind('(')+1: content[:content.rfind(')')].rfind(')')]
     func_list = json.loads('['+func_v+']')
     temp = new_content.split('{title:')[1:]
@@ -72,7 +72,7 @@ if xorg[xorg.find('name:')+5] == 'i':
 
 所以只能先decode()再自己转换辣，感谢ltkk大学霸教我
 
-```
+```python
 def convert(s: str):
     pattern = re.compile(r'\\u[0-9a-fA-F]{4}')
     res = pattern.sub(lambda x: chr(int(x.group()[2:], 16)), s)
@@ -86,7 +86,7 @@ def convert(s: str):
 
 我构建了一个类用来操作数据
 
-```
+```python
 class Character:
     def __init__(self):
         self.title: str
@@ -105,7 +105,7 @@ class Character:
 
 最后拿着url将获取的数据以二进制流形式存储在本地即可了
 
-```
+```python
 def download(url: str, _dir: str, name: str):
     logging.info(f'saving file: {_dir + name}, from {url}')
     image = r.get(url).content
